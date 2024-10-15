@@ -138,10 +138,10 @@ const HomePage = () => {
                 <Container>
                     <LampContainer>
                         <div className="flex flex-col items-center justify-center relative w-full text-center">
-                            <h2 className="text-4xl lg:text-4xl xl:text-5xl lg:!leading-snug font-semibold mt-8"
+                            <h2 className="text-4xl lg:text-4xl xl:text-6xl lg:!leading-snug font-semibold mt-8"
                               style={{ fontFamily: 'ethocentric' }}
                             >
-                              Besök oss för en unik <br />  spelupplevelse! 
+                              Besök oss  <br />  Idag
                             </h2>
                             <p className="text-muted-foreground mt-6 max-w-md mx-auto">
                                 Build stunning websites with Astra&apos;s intuitive drag-and-drop builder and powerful AI assistant
