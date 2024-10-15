@@ -21,7 +21,7 @@ const ImageMarqueeSection = () => {
                     <figure
                         key={index}
                         className={cn(
-                            "relative w-28 h-28 cursor-pointer overflow-hidden ","  hover:bg-zinc-50/[.15]",
+                            "relative lg:w-28 lg:h-28 w-20 h-20 cursor-pointer overflow-hidden ","  hover:bg-zinc-50/[.15]",
                         )}
                     >
                         {/* Image Element */}

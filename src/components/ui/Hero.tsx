@@ -10,10 +10,10 @@ import { FaLocationArrow } from 'react-icons/fa'
 
 function Hero() {
   return (
-    <div className="relative w-full h-[60vh] lg:h-screen"> {/* Full height on desktop, reduced on mobile */}
+    <div className="relative w-screen h-[65vh] lg:h-screen"> {/* Full height on desktop, reduced on mobile */}
       
       {/* Background Image */}
-      <div className="absolute inset-0 -z-10 lg:w-full lg:h-[90%] blur-sm h-[60%] w-100vw">
+      <div className="absolute inset-0 -z-10 lg:w-full lg:h-[90%] lg:blur-sm  h-[60%] w-100vw ">
         <Image
           src="/assets/xtream.jpg"
           alt="background image"
@@ -32,7 +32,7 @@ function Hero() {
         </div>
       </div>
 
-      <Container className="flex  items-center md:items-start justify-start px-2 md:px-20 text-center md:text-left"> {/* Flex alignment to the top */}
+      <Container className="flex   items-center md:items-start justify-start px-5 md:px-20 text-center md:text-left"> {/* Flex alignment to the top */}
         
         {/* Left side: text content */}
         <div className="relative z-10 w-full h-auto"> {/* Adjusted container height */}

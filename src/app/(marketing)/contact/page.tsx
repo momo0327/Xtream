@@ -1,4 +1,3 @@
-// src/app/(marketing)/contact/page.tsx
 'use client'
 import React from 'react';
 import { Phone } from 'lucide-react'; // Import phone icon from lucide-react
@@ -8,20 +7,25 @@ const ContactPage = () => {
   return (
     <Container className="min-h-screen flex flex-col justify-center items-center px-4 md:px-20">
       {/* Kontakta Oss Heading with Ethnocentric font */}
-      <h1 className="text-5xl font-extrabold text-center mb-6 text-transparent   bg-clip-text bg-gradient-to-b from-white to-gray-400"
-    style={{ fontFamily: 'ethocentric' }}> 
+      <h1 className="text-4xl sm:text-5xl font-extrabold text-center mb-6 text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-400"
+        style={{ fontFamily: 'ethocentric' }}>
         Kontakta Oss
       </h1>
 
-      <p className="text-center text-md mb-10 text-foreground/70">
+      <p className="text-center text-sm sm:text-md mb-10 text-foreground/70">
         Har du några frågor? Fyll i formuläret nedan, så hör vi av oss så snart som möjligt!
       </p>
 
       {/* Phone number section */}
-      <div className="flex items-center justify-center gap-2 mb-8">
-        <Phone className="w-6 h-6  text-gray-400" />
-        <p className="text-lg text-gray-700">
-         Vill du boka? Ring gärna oss på <strong>072-336-43 84</strong>
+      <div className="flex flex-col sm:flex-row items-center justify-center gap-2 mb-8">
+        <p className="text-sm sm:text-lg text-gray-700">
+          Vill du boka? Ring gärna oss på <br />
+          <div className='flex flex-row gap-3 items-center justify-center mt-3'>
+          <Phone className="w-6 h-6 text-gray-400" />
+
+<strong className=' text-gray-400'>072-336-43 84</strong>
+          </div>
+          
         </p>
       </div>
 
@@ -65,7 +69,7 @@ const ContactPage = () => {
 
         <button
           type="submit"
-          className="w-full py-3 px-4text-white bg-gradient-to-r from-red-800 to-red-500 font-bold rounded-lg transition duration-200 ease-in-out"
+          className="w-full py-3 px-4 text-white bg-gradient-to-r from-red-800 to-red-500 font-bold rounded-lg transition duration-200 ease-in-out"
         >
           Skicka Meddelande
         </button>
