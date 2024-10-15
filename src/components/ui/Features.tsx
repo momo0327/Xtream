@@ -18,7 +18,7 @@ function Features() {
         {/* Content */}
         <Container>
           <div className="max-w-md mx-auto text-left md:text-center">
-            <SectionBadge title="Features" />
+            <SectionBadge title="Om oss" />
             <h2 className="text-2xl break-words lg:break-normal lg:text-4xl font-semibold mt-6 text-left md:text-center "
               style={{ fontFamily: 'ethocentric' }}
             >

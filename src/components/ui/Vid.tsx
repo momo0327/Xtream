@@ -15,30 +15,31 @@ const Vid = () => {
     <div className="relative w-full h-screen">
       {/* Full-screen Background Thumbnail with blur */}
       <div
-        className="absolute inset-0 w-full h-[80%] bg-cover bg-center bg-black/50"
+        className="absolute inset-0 w-full lg:h-[80%] h-[50%] bg-cover bg-center bg-black/50 flex flex-col items-center justify-center"
         style={{ backgroundImage: `url('./assets/thumbnail2.jpg')` }} // Fullscreen blurred thumbnail
       >
-        <div className="absolute inset-0 bg-black/50 backdrop-blur-sm"></div> {/* Dark overlay for contrast */}
-      </div>
+        {/* Dark overlay for contrast */}
+        <div className="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
 
-      {/* Title above the video player */}
-      <div className="absolute top-10 w-full flex justify-center  z-20">
-        <h1 className="text-white text-4xl font-bold "
+        {/* Title above the video player */}
+        <h1 className="text-white text-3xl sm:text-4xl font-bold z-20 mb-3"
             style={{ fontFamily: 'ethocentric' }}
         >
-         Kolla in videon
+          Kolla in videon
         </h1>
-     
-      </div>
 
-      {/* Centered Video Player */}
-      <div className="flex items-center justify-center h-full z-10 relative">
-        <div className="relative w-[640px] h-[360px]"> {/* Adjust video size here */}
+        {/* Small Text under the title */}
+        <p className="text-gray-400 text-sm sm:text-base text-center w-[80%] max-w-[500px] z-20 mb-10">
+          Se vår senaste introduktionsvideo som visar alla fantastiska funktioner hos oss!
+        </p>
+
+        {/* Centered Video Player */}
+        <div className="relative w-[90%] max-w-[320px] sm:max-w-[640px] h-[180px] sm:h-[360px] z-20"> {/* Adjust video size */}
           {!isPlaying && (
             <div
               onClick={handlePlay}
-              className="absolute inset-0 flex items-center justify-center w-full h-full cursor-pointer"
-              style={{ backgroundImage: `url('./assets/thumbnail2.jpg')`, backgroundSize: 'cover', backgroundPosition: 'center' }} // Small thumbnail as background
+              className="absolute inset-0 flex items-center justify-center cursor-pointer bg-cover bg-center"
+              style={{ backgroundImage: `url('./assets/thumbnail2.jpg')` }} // Small thumbnail as background
             >
               {/* Play button centered on thumbnail */}
               <button className="text-white text-6xl bg-black/60 p-4 rounded-full">
@@ -61,6 +62,7 @@ const Vid = () => {
           </video>
         </div>
       </div>
+
       <style jsx>{`
         @font-face {
           font-family: 'ethocentric';

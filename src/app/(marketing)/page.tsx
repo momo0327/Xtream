@@ -1,3 +1,5 @@
+'use client'
+
 import { Container, Icons, Wrapper } from "@/components";
 import Grid from "@/components/Grid";
 import { Button } from "@/components/ui/button";
@@ -50,7 +52,8 @@ const HomePage = () => {
                          </h2>
 
                 <p className="text-muted-foreground mt-6">
-                    Astra offers a range of features to help you build a stunning website in no time
+                Vi är öppna under hela veckan för att du ska kunna njuta av din spelupplevelse oavsett dag!
+
                 </p>
             </div>
         </Wrapper>
@@ -135,22 +138,32 @@ const HomePage = () => {
                 <Container>
                     <LampContainer>
                         <div className="flex flex-col items-center justify-center relative w-full text-center">
-                            <h2 className="text-4xl lg:text-5xl xl:text-6xl lg:!leading-snug font-semibold mt-8">
-                                From Idea to Launch <br /> Faster Than Ever
+                            <h2 className="text-4xl lg:text-4xl xl:text-5xl lg:!leading-snug font-semibold mt-8"
+                              style={{ fontFamily: 'ethocentric' }}
+                            >
+                              Besök oss för en unik <br />  spelupplevelse! 
                             </h2>
                             <p className="text-muted-foreground mt-6 max-w-md mx-auto">
                                 Build stunning websites with Astra&apos;s intuitive drag-and-drop builder and powerful AI assistant
                             </p>
-                            <Button variant="white" className="mt-6" asChild>
+                            {/* <Button variant="white" className="mt-6" asChild>
                                 <Link href="/sign-in">
                                     Get started for free
                                     <ArrowRight className="w-4 h-4 ml-2" />
                                 </Link>
-                            </Button>
+                            </Button> */}
                         </div>
                     </LampContainer>
+                    
                 </Container>
-
+                <style jsx>{`
+        @font-face {
+          font-family: 'ethocentric';
+          src: url('/assets/ethocentric.otf') format('opentype');  
+          font-weight: normal;
+          font-style: normal;
+        }
+      `}</style>
         </section>
     )
 };

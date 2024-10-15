@@ -14,7 +14,7 @@ function SubHero() {
         <Wrapper className="flex flex-col items-center justify-center py-12 relative">
     <Container>
         <div className="max-w-md mx-auto text-start md:text-center">
-            <SectionBadge title="The Process" />
+            <SectionBadge title="Fördelar" />
             <h2 className="text-3xl lg:text-4xl font-semibold mt-6"
              style={{ fontFamily: 'ethocentric' }}
             >
