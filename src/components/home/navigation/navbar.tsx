@@ -1,79 +1,79 @@
 'use client';
 
-import { useState, useEffect } from 'react'; // Import useEffect for scroll detection
-import { Container } from '@/components'; // Assuming you are using Container from your components
+import { useState, useEffect } from 'react'; // Importera useEffect för att hantera scroll
+import { Container } from '@/components'; // Antar att du använder Container från dina komponenter
 import { buttonVariants } from '@/components/ui/button';
 import Link from 'next/link';
-import { Menu, X } from 'lucide-react'; // Import icons for Hamburger and Close buttons
+import { Menu, X } from 'lucide-react'; // Importera ikoner för Hamburger och Stäng-knappar
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
-    const [isVisible, setIsVisible] = useState(true); // Track the visibility of the navbar
-    const [lastScrollPos, setLastScrollPos] = useState(0); // Track the last scroll position
+    const [isVisible, setIsVisible] = useState(true); // Spåra synlighet för navigationsfältet
+    const [lastScrollPos, setLastScrollPos] = useState(0); // Spåra sista scroll-positionen
 
-    // Toggle function to open and close the menu
+    // Funktion för att öppna och stänga menyn
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
     };
 
-    // Scroll event handler to show/hide navbar based on scroll direction
+    // Scroll-hanterare för att visa/dölja navbar baserat på scrollriktningen
     const handleScroll = () => {
         const currentScrollPos = window.pageYOffset;
 
-        // If user is scrolling down, hide the navbar. If scrolling up, show it.
+        // Om användaren scrollar ner, dölja navbar. Om de scrollar upp, visa den.
         if (currentScrollPos > lastScrollPos && currentScrollPos > 100) {
-            setIsVisible(false); // Hide navbar when scrolling down
+            setIsVisible(false); // Dölj navbar när man scrollar ner
         } else {
-            setIsVisible(true); // Show navbar when scrolling up
+            setIsVisible(true); // Visa navbar när man scrollar upp
         }
 
-        setLastScrollPos(currentScrollPos); // Update the last scroll position
+        setLastScrollPos(currentScrollPos); // Uppdatera senaste scroll-positionen
     };
 
-    // Add scroll event listener
+    // Lägg till scroll-händelselyssnare
     useEffect(() => {
         window.addEventListener('scroll', handleScroll);
 
         return () => {
-            window.removeEventListener('scroll', handleScroll); // Cleanup on unmount
+            window.removeEventListener('scroll', handleScroll); // Rensa upp vid avmontering
         };
-    }, [lastScrollPos]); // Dependency on the last scroll position
+    }, [lastScrollPos]); // Beroende av senaste scroll-positionen
 
     return (
         <header className={`px-4 h-16 sticky top-0 inset-x-0 w-full bg-black/40 backdrop-blur-lg z-50 transition-transform duration-300 ${isVisible ? 'transform translate-y-0' : 'transform -translate-y-full'}`}>
             <Container reverse>
                 <div className="flex items-center justify-between h-full mx-auto md:max-w-screen-xl">
                     
-                    {/* Logo Section */}
+                    {/* Logosektion */}
                     <div className="flex items-center">
                         <Link href="/" className="flex items-center gap-2">
                             <img 
                                 src="./assets/logo.png" 
                                 alt="logo" 
-                                className="w-28 h-auto md:w-48 px-2" 
+                                className="w-32 h-auto sm:w-36 md:w-48 px-2"  // Adjusted for mobile: w-32 for smaller screens, sm:w-36 for small, md:w-48 for larger screens
                             />
                         </Link>
                     </div>
 
-                    {/* Desktop Navigation Links */}
+                    {/* Desktop-navigeringslänkar */}
                     <nav className="hidden md:block absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
                         <ul className="flex items-center justify-center gap-8">
-                            <Link href="#" className="hover:text-foreground/80 text-md">About</Link>
-                            <Link href="#" className="hover:text-foreground/80 text-md">Pricing</Link>
-                            <Link href="#" className="hover:text-foreground/80 text-md">Features</Link>
-                            <Link href="#" className="hover:text-foreground/80 text-md">Blog</Link>
+                            <Link href="#" className="hover:text-foreground/80 text-md">Om oss</Link>
+                            <Link href="#" className="hover:text-foreground/80 text-md">Priser</Link>
+                            <Link href="#" className="hover:text-foreground/80 text-md">Funktioner</Link>
+                            <Link href="#" className="hover:text-foreground/80 text-md">Blogg</Link>
                         </ul>
                     </nav>
 
-                    {/* Mobile Hamburger Menu */}
+                    {/* Mobilmenyknapp */}
                     <div className="flex md:hidden items-center">
-                        {/* Hamburger Icon (toggle menu) */}
+                        {/* Hamburger-ikon (för att öppna/stänga menyn) */}
                         <button onClick={toggleMenu} className="text-white">
                             {menuOpen ? <X className="w-8 h-8" /> : <Menu className="w-8 h-8" />}
                         </button>
                     </div>
 
-                    {/* "Kontakta oss" Button */}
+                    {/* "Kontakta oss"-knapp */}
                     <div className="hidden md:flex items-center">
                         <Link href="/contact" 
                         
@@ -82,14 +82,13 @@ const Navbar = () => {
                         </Link>
                     </div>
 
-                    {/* Mobile Dropdown Menu */}
+                    {/* Mobilmeny */}
                     {menuOpen && (
                         <div className="absolute top-16 left-0 right-0 bg-black/90 text-white flex flex-col items-center gap-4 py-6 md:hidden">
-                            <Link href="#" className="hover:text-gray-300 text-lg" onClick={toggleMenu}>Pricing</Link>
-                            <Link href="#" className="hover:text-gray-300 text-lg" onClick={toggleMenu}>About</Link>
-                            <Link href="#" className="hover:text-gray-300 text-lg" onClick={toggleMenu}>Features</Link>
-                            <Link href="#" className="hover:text-gray-300 text-lg" onClick={toggleMenu}>Blog</Link>
-                            <Link href="/contact" className="hover:text-gray-300 text-lg">Kontakta oss</Link> {/* Mobile button */}
+                            <Link href="#" className="hover:text-gray-300 text-lg" onClick={toggleMenu}>Priser</Link>
+                            <Link href="#" className="hover:text-gray-300 text-lg" onClick={toggleMenu}>Om oss</Link>
+                            <Link href="#" className="hover:text-gray-300 text-lg" onClick={toggleMenu}>Funktioner</Link>
+                            <Link href="/contact" className="hover:text-gray-300 text-lg">Kontakta oss</Link> {/* Mobilknapp */}
                         </div>
                     )}
                 </div>
