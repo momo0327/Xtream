@@ -15,13 +15,13 @@ const imageUrls = [
 
 const ImageMarqueeSection = () => {
     return (
-        <div className="w-[90%]">
+        <div className="lg:w-[90%] w-full">
             <Marquee pauseOnHover className="[--duration:20s] select-none  mb-20">
                 {imageUrls.map((imageUrl, index) => (
                     <figure
                         key={index}
                         className={cn(
-                            "relative lg:w-28 lg:h-28 w-20 h-20 cursor-pointer overflow-hidden ","  hover:bg-zinc-50/[.15]",
+                            "relative lg:w-20 lg:h-20 w-16 h-16 cursor-pointer overflow-hidden ","  hover:bg-zinc-50/[.15]",
                         )}
                     >
                         {/* Image Element */}

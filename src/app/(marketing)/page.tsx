@@ -17,6 +17,7 @@ import Hero from "@/components/ui/Hero";
 import SubHero from "@/components/ui/SubHero";
 import Features from "@/components/ui/Features";
 import Pricing from "@/components/ui/Pricing";
+import Pic from "@/components/ui/Pic";
 
 const HomePage = () => {
     const firstRow = reviews.slice(0, reviews.length / 2);
@@ -41,17 +42,20 @@ const HomePage = () => {
 
             {/*Features*/}
                 <Features/>
+    
+
+                <Pic/>
 
             <Wrapper className="flex flex-col items-center justify-center  relative">
                 <div className="max-w-md mx-auto text-start md:text-center  ">
                     <SectionBadge title="Öppettider" />
 
-                        <h2 className="text-3xl lg:text-4xl font-semibold mt-6 "
+                        <h2 className="text-2xl lg:text-4xl font-semibold mt-6 "
                             style={{ fontFamily: 'ethocentric' }}>
                                 Öppet alla dagar           
                          </h2>
 
-                <p className="text-muted-foreground mt-6">
+                <p className="text-muted-foreground lg:mt-6 lg:text-md mt-3 text-sm ">
                 Vi är öppna under hela veckan för att du ska kunna njuta av din spelupplevelse oavsett dag!
 
                 </p>

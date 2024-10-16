@@ -22,7 +22,7 @@ const Vid = () => {
         <div className="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
 
         {/* Title above the video player */}
-        <h1 className="text-white text-3xl sm:text-4xl font-bold z-20 mb-3"
+        <h1 className="text-white text-2xl lg:text-4xl sm:text-4xl font-bold z-20 mb-3"
             style={{ fontFamily: 'ethocentric' }}
         >
           Kolla in videon

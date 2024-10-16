@@ -5,7 +5,7 @@ import SectionBadge from './section-badge';
 function Hours() {
   return (
     
-    <div className="w-full mt-20 py-10 bg-transparent mb-20 ">
+    <div className="w-full mt-20 bg-transparent mb-20 ">
     
       {/* Flex container for two smaller side-by-side containers */}
       

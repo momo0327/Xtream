@@ -24,7 +24,7 @@ function Features() {
             >
               Vi Förbättar Spelupplevelsen
             </h2>
-            <p className="text-muted-foreground mt-6 text-left md:text-center">
+            <p className="text-muted-foreground mt-6 lg:text-md  text-left md:text-center">
               Oavsett om du är nybörjare eller expert, har vi funktionerna för att förbättra din upplevelse.
             </p>
           </div>
@@ -32,13 +32,13 @@ function Features() {
 
         {/* Features Grid */}
         <Container>
-          <div className="flex flex-col items-center justify-center py-10 md:py-20 w-full">
+          <div className="flex flex-col items-center justify-center py-5 md:py-20 w-full">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
               {features.map((feature) => (
                 <div key={feature.title} className="flex flex-col items-start px-4 md:px-6 lg:px-8 py-6">
                   {/* Feature Icon */}
                   <div className="flex items-center justify-start">
-                    <feature.icon className="w-8 h-8" />
+                    <feature.icon className="lg:w-8 lg:h-8 w-7 h-7 "  />
                   </div>
 
                   {/* Feature Title */}

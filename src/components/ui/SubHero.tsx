@@ -15,12 +15,12 @@ function SubHero() {
     <Container>
         <div className="max-w-md mx-auto text-start md:text-center">
             <SectionBadge title="Fördelar" />
-            <h2 className="text-3xl lg:text-4xl font-semibold mt-6"
+            <h2 className="text-2xl lg:text-4xl font-semibold mt-6"
              style={{ fontFamily: 'ethocentric' }}
             >
                     Vad Vi Erbjuder 
                     </h2>
-            <p className="text-muted-foreground mt-6"
+            <p className="text-muted-foreground mt-2 text-sm"
              
 
             >
@@ -34,7 +34,7 @@ function SubHero() {
                 {perks.map((perk) => (
                     <div key={perk.title} className="flex flex-col items-start px-4 md:px-6 lg:px-8 lg:py-6 py-4">
                         <div className="flex items-center justify-center">
-                            <perk.icon className="w-8 h-8" />
+                            <perk.icon className="lg:w-8 lg:h-8 w-7 h-7" />
                         </div>
                         <h3 className="text-lg font-medium mt-4">
                             {perk.title}
