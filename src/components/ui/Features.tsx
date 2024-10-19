@@ -7,7 +7,7 @@ import { features } from "@/constants";
 
 function Features() {
   return (
-    <div className="w-full mt-20 py-10 bg-transparent mb-20">
+    <div className="w-full mt-20 py-10 bg-transparent mb-10">
 
       {/* Main Wrapper */}
       <Wrapper className="flex flex-col items-center justify-center relative">

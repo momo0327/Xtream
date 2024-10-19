@@ -38,53 +38,39 @@ export const features = [
     {
         icon: BsFillGearFill,
         title: "Utrustning av högsta klass",
-        info: "Spela på högupplösta skärmar, mekaniska tangentbord, precisionmöss och surround-ljudheadset för bästa upplevelse.",
-    },
-    {
-        icon: MdMonitor,
-        title: "Redo för e-sport",
-        info: "Tävla i veckoturneringar eller vänskapsmatcher. Testa dina färdigheter och vinn priser i vår e-sportzon.",
-    },
-    {
-        icon: IoMdPeople ,
-        title: "Personliga profiler",
-        info: "Logga in med ditt konto för att spara speldata, anpassa inställningar och följa dina prestationer på våra system.",
-    },
-    {
-        icon: IoIosRocket,
-        title: "Snack Bar & Förfriskningar",
-        info: "Fyll på med olika snacks och drycker på plats för att hålla dig igång genom långa spelsessioner.",
+        info: "Spela med högupplösta skärmar, mekaniska tangentbord och surround-ljudheadset, sponsrat av Corsair för en premium spelupplevelse."
+
     },
 ];
 export const pricingCards = [
     {
-        title: "Starter",
+        title: "VIPGIBB",
         description: "Perfekt för att prova plura",
-        price: "Gratis",
+        price: "300 kr",
         duration: "",
         highlight: "Viktiga funktioner",
         buttonText: "Börja gratis",
-        features: ["Begränsade projekt", "1 Teammedlem", "Grundläggande funktioner"],
+        features: ["3 Red bull", "Popcorn/snacks", "Grundläggande funktioner"],
         priceId: "",
     },
     {
-        title: "Unlimited Saas",
+        title: "Unlimited Saas",// drop in
         description: "Det ultimata byråkitet",
-        price: "199 $",
+        price: "SPELDEAL",
         duration: "månad",
         highlight: "Viktiga funktioner",
         buttonText: "Uppgradera till Pro",
-        features: ["Obegränsade projekt", "5 Teammedlemmar", "Avancerade designverktyg", "Anpassningsbar domän"],
+        features: ["1h - 35 kr", "3h - 95 kr", "5h - 130 kr", "10h - 200 kr", "20h - 340 kr"],
         priceId: "price_1OYxkqFj9oKEERu1KfJGWxgN",
     },
     {
-        title: "Enterprise",
+        title: "BARNKALAS",
         description: "För seriösa byråägare",
-        price: "399 $",
+        price: "329 Kr",
         duration: "månad",
         highlight: "Allt i Starter, plus",
         buttonText: "Uppgradera till Enterprise",
-        features: ["Obegränsade projekt", "Obegränsat antal Teammedlemmar", "Anpassad branding", "Prioriterad support (24/7)"],
+        features: ["3h speltid", "Godispåse", "Snacks/popcorn", "Korv med bröd & Dricka"],
         priceId: "price_1OYxkqFj9oKEERu1NbKUxXxN",
     },
 ];
