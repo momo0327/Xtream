@@ -33,11 +33,14 @@ function Pic() {
           Drop-in varje dag, och nattgibben börjar på fredag och håller på till lördag. Nattgibben startar kl. 22:00 och slutar 06:00 – perfekt för nattugglor som älskar att spela!
 
           </p>
+
+          <a href="#pricing">
           <MagicButton
            icon= {<ArrowRight className="w-4 h-4 ml-1" />} 
            position='right' 
-           title='Läs mer' 
+           title='Se Priser' 
            />
+           </a>
         </div>
 
         {/* Image with BorderBeam */}
@@ -55,7 +58,7 @@ function Pic() {
       </div>
 
       {/* Second Content Section (New Arkaden Section) */}
-      <div className="flex flex-col md:flex-row-reverse items-center justify-between space-y-6 md:space-y-0 mt-16">
+      <div id='kalas' className="flex flex-col md:flex-row-reverse items-center justify-between space-y-6 md:space-y-0 mt-16">
         {/* Text Content */}
         <div className="w-full md:w-1/2 max-w-lg space-y-4 text-left">
           {/* Title */}
@@ -66,11 +69,13 @@ function Pic() {
 
 
           </p>
+          <a href="/contact">
           <MagicButton
            icon= {<ArrowRight className="w-4 h-4 ml-1" />} 
            position='right' 
-           title='boka' 
+           title='Boka' 
            />
+           </a>
          
 
         </div>

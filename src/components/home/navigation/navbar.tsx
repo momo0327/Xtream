@@ -56,16 +56,13 @@ const Navbar = () => {
         {/* Desktop Navigation Links */}
         <nav className="hidden md:block absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
           <ul className="flex items-center justify-center gap-8">
-            <Link href="#" className="hover:text-foreground/80 text-md font-medium">
-              Om oss
-            </Link>
-            <Link href="#" className="hover:text-foreground/80 text-md font-medium">
+            <Link href="#hours" className="hover:text-foreground/80 text-md font-medium">
               Öppettider
             </Link>
-            <Link href="#" className="hover:text-foreground/80 text-md font-medium">
+            <Link href="#pricing" className="hover:text-foreground/80 text-md font-medium">
               Priser
             </Link>
-            <Link href="#" className="hover:text-foreground/80 text-md font-medium">
+            <Link href="#kalas" className="hover:text-foreground/80 text-md font-medium">
               Barnkalas
             </Link>
           </ul>
@@ -101,18 +98,18 @@ const Navbar = () => {
             </button>
           </div>
           <div className="flex flex-col items-center space-y-6 mt-10">
-            <Link href="#" className="text-lg" onClick={toggleMenu}>
-              Om oss
-            </Link>
-            <Link href="#" className="text-lg" onClick={toggleMenu}>
+            <div className='flex flex-col gap-6 items-start '>
+
+            <Link href="#hours" className="text-lg" onClick={toggleMenu}>
               Öppettider
             </Link>
-            <Link  href="#priser"  className="text-lg" onClick={toggleMenu}>
+            <Link  href="#pricing" className="text-lg" onClick={toggleMenu}>
               Priser
             </Link>
-            <Link  href="#priser"  className="text-lg" onClick={toggleMenu}>
+            <Link  href="#kalas"  className="text-lg" onClick={toggleMenu}>
               Barnkalas
             </Link>
+            </div>
             <Link
               href="/contact"
               className="bg-gradient-to-r from-red-800 to-red-500 text-white px-8 py-3 rounded-lg hover:bg-red-700"
@@ -121,7 +118,7 @@ const Navbar = () => {
               Kontakta oss
             </Link>
           </div>
-        </div>
+          </div>
 
         {/* Blurred background effect when menu is open */}
         {menuOpen && (

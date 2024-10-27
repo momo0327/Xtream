@@ -11,7 +11,7 @@ import { ChevronRight } from 'lucide-react';
 
 function Hero() {
   return (
-    <div className="relative w-screen h-[55vh] lg:h-screen"> {/* Full height on desktop, reduced on mobile */}
+    <div className="relative w-screen h-[55vh] lg:h-screen md:h-[100vh]"> {/* Full height on desktop, reduced on mobile */}
       
       {/* Background Image */}
       <div className="absolute inset-0 -z-10 lg:w-full h-[90%] blur-sm w-100vw ">
@@ -37,56 +37,56 @@ function Hero() {
         <div className="relative z-10 w-full h-auto"> {/* Adjusted container height */}
   
           {/* Address Section - Only visible on desktop */}
-          <h2 className="text-red-500 text-lg font-semibold mb-5 hidden sm:flex">
-            <div className="relative flex items-center justify-center md:justify-start mt-8 md:mt-40">
-              <Link
-                href="https://www.google.com/maps/search/?api=1&query=Xtream+E-sport+Arena+Spelhall+Göteborg,+Kyrkvägen+19,+433+33+Partille"
-                target="_blank" // Opens in a new tab
-                className="flex items-center justify-center w-max rounded-full border-t border-foreground/30 bg-neutral-600/40 backdrop-blur-lg px-2 py-1 md:py-2 gap-2 md:gap-8 shadow-3xl shadow-background/40 cursor-pointer select-none"
-              >
-                <p className="text-foreground lg:text-md text-xs text-center md:text-base font-medium pl-4 pr-4 lg:pr-0 flex items-center justify-center ">
-                  {/* SVG Icon */}
-                  <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24" className="mr-2">
-                    <path
-                      fill="#a1a1aa"
-                      d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7m0 9.5a2.5 2.5 0 0 1 0-5a2.5 2.5 0 0 1 0 5"
-                    />
-                  </svg>
-                  Kyrktorget 19, Partille 
-                </p>
+          <h2 className="text-red-500 text-lg font-semibold mb-5 hidden lg:flex">
+    <div className="relative flex items-center justify-center md:justify-start mt-32">
+      <Link
+        href="https://www.google.com/maps/search/?api=1&query=Xtream+E-sport+Arena+Spelhall+Göteborg,+Kyrkvägen+19,+433+33+Partille"
+        target="_blank" // Opens in a new tab
+        className="flex items-center justify-center w-max rounded-full border-t border-foreground/30 bg-neutral-600/40 backdrop-blur-lg px-2 py-1 md:py-2 gap-2 md:gap-8 shadow-3xl shadow-background/40 cursor-pointer select-none"
+      >
+        <p className="text-foreground lg:text-md text-xs text-center md:text-base font-medium pl-4 pr-4 lg:pr-0 flex items-center justify-center ">
+          {/* SVG Icon */}
+          <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24" className="mr-2">
+            <path
+              fill="#a1a1aa"
+              d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7m0 9.5a2.5 2.5 0 0 1 0-5a2.5 2.5 0 0 1 0 5"
+            />
+          </svg>
+          Kyrktorget 19, Partille 
+        </p>
 
-                <Button  size="sm" className="rounded-full hidden lg:flex   text-white bg-gradient-to-r from-red-800 to-red-500">
-                  Hitta hit
-                  <ArrowRight className="w-4 h-4 ml-1" />
-                </Button>
-              </Link>
-            </div>
-          </h2>
+        <Button size="sm" className="rounded-full hidden lg:flex text-white bg-gradient-to-r from-red-800 to-red-500">
+          Hitta hit
+          <ArrowRight className="w-4 h-4 ml-1" />
+        </Button>
+      </Link>
+    </div>
+  </h2>
 
-<div className="flex sm:hidden items-center justify-center mt-8">
-  <Link
-    href="https://www.google.com/maps/search/?api=1&query=Xtream+E-sport+Arena+Spelhall+Göteborg,+Kyrkvägen+19,+433+33+Partille"
-    target="_blank" // Opens in a new tab
-  >
-    <button className="group relative grid overflow-hidden rounded-full px-4 py-1  transition-colors duration-200  "> {/* Updated bg-opacity */}
-      <span>
-        <span className="spark mask-gradient absolute inset-0 h-[100%] w-[100%] animate-flip overflow-hidden rounded-full [mask:linear-gradient(white,_transparent_50%)] before:absolute before:aspect-square before:w-[200%] before:rotate-[-90deg] before:animate-rotate before:bg-[conic-gradient(from_0deg,transparent_0_340deg,white_360deg)] before:content-[''] before:[inset:0_auto_auto_50%] before:[translate:-50%_-15%]" />
-      </span>
-      <span className="absolute inset-[1px] rounded-full bg-neutral-400/10 backdrop-blur-md transition-colors duration-200 group-hover:bg-neutral-700/20" /> {/* Increased transparency */}
-      <span className="h-full w-full blur-md absolute bottom-0 inset-x-0 bg-transparent"></span>
-      <span className="z-10 py-0.5 text-sm text-neutral-100 flex items-center justify-center gap-1.5">
-        <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24" className="mr-2">
-          <path
-            fill="#a1a1aa"
-            d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7m0 9.5a2.5 2.5 0 0 1 0-5a2.5 2.5 0 0 1 0 5"
-          />
-        </svg>                
-        Kyrktorget 19, Partille 
-        <ChevronRight className="w-4 h-4" />
-      </span>
-    </button>
-  </Link>
-</div>
+  <div className="flex lg:hidden items-center justify-center mt-8">
+    <Link
+      href="https://www.google.com/maps/search/?api=1&query=Xtream+E-sport+Arena+Spelhall+Göteborg,+Kyrkvägen+19,+433+33+Partille"
+      target="_blank" // Opens in a new tab
+    >
+      <button className="group relative grid overflow-hidden rounded-full px-4 py-1 transition-colors duration-200"> {/* Updated bg-opacity */}
+        <span>
+          <span className="spark mask-gradient absolute inset-0 h-[100%] w-[100%] animate-flip overflow-hidden rounded-full [mask:linear-gradient(white,_transparent_50%)] before:absolute before:aspect-square before:w-[200%] before:rotate-[-90deg] before:animate-rotate before:bg-[conic-gradient(from_0deg,transparent_0_340deg,white_360deg)] before:content-[''] before:[inset:0_auto_auto_50%] before:[translate:-50%_-15%]" />
+        </span>
+        <span className="absolute inset-[1px] rounded-full bg-neutral-400/10 backdrop-blur-md transition-colors duration-200 group-hover:bg-neutral-700/20" /> {/* Increased transparency */}
+        <span className="h-full w-full blur-md absolute bottom-0 inset-x-0 bg-transparent"></span>
+        <span className="z-10 py-0.5 text-sm text-neutral-100 flex items-center justify-center gap-1.5">
+          <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24" className="mr-2">
+            <path
+              fill="#a1a1aa"
+              d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7m0 9.5a2.5 2.5 0 0 1 0-5a2.5 2.5 0 0 1 0 5"
+            />
+          </svg>                
+          Kyrktorget 19, Partille 
+          <ChevronRight className="w-4 h-4" />
+        </span>
+      </button>
+    </Link>
+  </div>
 
 
 
@@ -100,15 +100,18 @@ function Hero() {
           {/* Subtext */}
           <p className="md:text-lg text-foreground/80 lg:mt-5 mt-3 text-sm lg:text-xl text-center lg:text-left lg:mb-1 mb-5">
             Spela i timmar, 100+ olika roliga spel mätta dig själv <br /> med snacks och dryck från våran kiosk med bred sortiment  
+            
           </p>
 
           {/* Action Button */}
           <div className="md:justify-start lg:text-left text-center">
+            <a href="#features">
             <MagicButton
               title='Utforska mer'
               position='right'
               icon={<FaLocationArrow />}
             />
+            </a>
           </div>
         </div>
       </Container>

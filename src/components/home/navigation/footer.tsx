@@ -31,22 +31,22 @@ const Footer = () => {
                             <ul className="mt-4 text-sm text-muted-foreground">
                                 <li className="mt-2">
                                     <Link href="" className="hover:text-foreground transition-all duration-300">
-                                        Features
+                                        Om Oss
                                     </Link>
                                 </li>
                                 <li className="mt-2">
                                     <Link href="" className="hover:text-foreground transition-all duration-300">
-                                        Pricing
+                                        Priser
                                     </Link>
                                 </li>
                                 <li className="mt-2">
                                     <Link href="" className="hover:text-foreground transition-all duration-300">
-                                        Testimonials
+                                        Öppettider
                                     </Link>
                                 </li>
                                 <li className="mt-2">
                                     <Link href="" className="hover:text-foreground transition-all duration-300">
-                                        Integration
+                                        Hitta hit
                                     </Link>
                                 </li>
                             </ul>
@@ -80,50 +80,7 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className="md:grid md:grid-cols-2 md:gap-8">
-                        <div className="">
-                            <h3 className="text-base font-medium text-white">
-                                Resources
-                            </h3>
-                            <ul className="mt-4 text-sm text-muted-foreground">
-                                <li className="mt-2">
-                                    <Link href="" className="hover:text-foreground transition-all duration-300">
-                                        Blog
-                                    </Link>
-                                </li>
-                                <li className="mt-2">
-                                    <Link href="" className="hover:text-foreground transition-all duration-300">
-                                        Case Studies
-                                    </Link>
-                                </li>
-                                <li className="mt-2">
-                                    <Link href="" className="hover:text-foreground transition-all duration-300">
-                                        Support
-                                    </Link>
-                                </li>
-                            </ul>
-                        </div>
-                        <div className="mt-10 md:mt-0 flex flex-col">
-                            <h3 className="text-base font-medium text-white">
-                                Company
-                            </h3>
-                            <ul className="mt-4 text-sm text-muted-foreground">
-                                <li className="">
-                                    <Link href="" className="hover:text-foreground transition-all duration-300">
-                                        About Us
-                                    </Link>
-                                </li>
-                                <li className="mt-2">
-                                    <Link href="" className="hover:text-foreground transition-all duration-300">
-                                        Privacy Policy
-                                    </Link>
-                                </li>
-                                <li className="mt-2">
-                                    <Link href="" className="hover:text-foreground transition-all duration-300">
-                                        Terms & Conditions
-                                    </Link>
-                                </li>
-                            </ul>
-                        </div>
+                    
                     </div>
                 </div>
 

@@ -51,7 +51,7 @@ const HomePage = () => {
                
 
             <Wrapper className="flex flex-col items-center justify-center  relative">
-                <div className="max-w-md mx-auto text-start md:text-center  ">
+                <div  id='hours'  className="max-w-md mx-auto text-start md:text-center  ">
                     <SectionBadge title="Öppettider" />
 
                         <h2 className="text-2xl lg:text-4xl font-semibold mt-6 "

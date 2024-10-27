@@ -5,14 +5,14 @@ import SectionBadge from './section-badge';
 function Hours() {
   return (
     
-    <div className="w-full mt-20 bg-transparent mb-20 ">
+    <div  className="w-full mt-20 bg-transparent mb-20 ">
     
       {/* Flex container for two smaller side-by-side containers */}
       
-      <div className="flex flex-col md:flex-row justify-center gap-6">
+      <div  className="flex flex-col md:flex-row justify-center gap-6">
   
         {/* Container 1 */}
-        <div className="w-full h-[30vh] md:w-1/3 p-6 bg-neutral-950/60 rounded-lg flex items-center justify-center border border-white/10">
+        <div  className="w-full h-[30vh] md:w-1/3 p-6 bg-neutral-950/60 rounded-lg flex items-center justify-center border border-white/10">
           <ul className="space-y-4 text-center">
             <li className="text-lg font-semibold bg-gradient-to-r from-red-700 to-red-200 text-transparent bg-clip-text">
               Söndag - Torsdag:
