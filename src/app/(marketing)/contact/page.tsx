@@ -17,7 +17,7 @@ const ContactPage = () => {
       </p>
 
       {/* Main Container: Flex on large screens, column on mobile */}
-      <div className="w-full flex flex-col-reverse lg:flex-row gap-10">
+      <div className="w-full flex flex-col-reverse lg:flex-row gap-10 items-center justify-center"> {/* Centering added here */}
         
         {/* Left Side: Contact Form */}
         <form className="w-full lg:w-1/2 bg-black text-white p-8 rounded-lg shadow-lg space-y-6">
@@ -66,7 +66,7 @@ const ContactPage = () => {
         </form>
 
         {/* Right Side: Contact Info */}
-        <div className="w-full lg:w-1/2 flex flex-col bg-neutral-800 p-8 rounded-lg shadow-lg space-y-8">
+        <div className="w-full lg:w-2/5 flex flex-col bg-neutral-800 p-8 rounded-lg shadow-lg space-y-4 items-start justify-center"> {/* Height reverted to original */}
           <h2 className="text-lg font-bold text-white mb-4">Kontaktinformation</h2>
           
           {/* Phone number section */}
@@ -94,6 +94,7 @@ const ContactPage = () => {
         </div>
       </div>
 
+      {/* Correctly wrapped style tag */}
       <style jsx>{`
         @font-face {
           font-family: 'ethocentric';

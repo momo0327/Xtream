@@ -1,24 +1,22 @@
 import Icons from "@/components/icons";
-import { FaGamepad, FaCoffee, FaTrophy } from 'react-icons/fa';
-import { MdBolt, MdPalette, MdMonitor,  } from 'react-icons/md';
-import { IoIosRocket, IoMdPeople } from 'react-icons/io';
-import { BsFillGearFill } from 'react-icons/bs';
-import { GiHotMeal, GiGearStick, GiCrown } from 'react-icons/gi'; // HotMeal for snacks
-
+import { FaGamepad, FaTrophy } from 'react-icons/fa';
+import { MdBolt, MdFastfood } from 'react-icons/md'; // Fastfood icon for snacks
+import { IoMdPeople } from 'react-icons/io';
+import { GiConsoleController, GiCrown } from 'react-icons/gi'; // ConsoleController for high-end gaming equipment
 
 export const perks = [
     {
-        icon: FaGamepad ,
+        icon: FaGamepad,
         title: "Spela i timmar",
         info: "Njut av ett stort urval av de senaste spelen och spela så länge du vill.",
     },
     {
-        icon: GiHotMeal,
+        icon: MdFastfood, // Updated snack icon
         title: "Snacks & Dryck",
-        info: "Fyll på med utsökta snacks och drycker, allt tillgängligt i vårt kafé.",
+        info: "Fyll på med utsökta snacks och drycker, allt tillgängligt i vårt kiosk.",
     },
     {
-        icon: FaTrophy ,
+        icon: FaTrophy,
         title: "Gå med i turneringar",
         info: "Tävla i regelbundna turneringar eller spela avslappnade multiplayer-sessioner med vänner.",
     },
@@ -31,47 +29,43 @@ export const features = [
         info: "Hoppa rakt in i actionen. Logga in med ditt konto eller använd vårt för att komma igång snabbt med vilket spel som helst.",
     },
     {
-        icon: MdPalette,
+        icon: IoMdPeople, // Updated icon for playing with friends
         title: "Spela med vänner",
         info: "Ta med dina vänner och familj för multiplayer-spel, LAN-partyn eller gruppturneringar i en rolig, konkurrenskraftig miljö.",
     },
     {
-        icon: BsFillGearFill,
+        icon: GiConsoleController, // More gaming-oriented icon for high-end equipment
         title: "Utrustning av högsta klass",
-        info: "Spela med högupplösta skärmar, mekaniska tangentbord och surround-ljudheadset, sponsrat av Corsair för en premium spelupplevelse."
-
+        info: "Spela med högupplösta skärmar, mekaniska tangentbord och surround-ljudheadset, sponsrat av Corsair för en premium spelupplevelse.",
     },
 ];
+
 export const pricingCards = [
     {
         title: "VIPGIBB",
-        description: "Perfekt för att prova plura",
+        description: "Njut av exklusiv spelupplevelse.",
         price: "300 kr",
         duration: "",
         highlight: "Viktiga funktioner",
-        buttonText: "Börja gratis",
-        features: ["3 Red bull", "Popcorn/snacks", "Grundläggande funktioner"],
-        priceId: "",
+        features: ["3 Red bull", "Popcorn/snacks", "Vip-rum"],
     },
     {
-        title: "Unlimited Saas",// drop in
-        description: "Det ultimata byråkitet",
+        title: "DROP IN",// drop in
+        description: "Perfek för spontan spelglädje.",
         price: "SPELDEAL",
         duration: "månad",
         highlight: "Viktiga funktioner",
-        buttonText: "Uppgradera till Pro",
         features: ["1h - 35 kr", "3h - 95 kr", "5h - 130 kr", "10h - 200 kr", "20h - 340 kr"],
-        priceId: "price_1OYxkqFj9oKEERu1KfJGWxgN",
     },
     {
         title: "BARNKALAS",
-        description: "För seriösa byråägare",
+        description: "Spel, godis & minnen för barn!",
         price: "329 Kr",
         duration: "månad",
         highlight: "Allt i Starter, plus",
-        buttonText: "Uppgradera till Enterprise",
+        buttonText: "Boka nu ->",
         features: ["3h speltid", "Godispåse", "Snacks/popcorn", "Korv med bröd & Dricka"],
-        priceId: "price_1OYxkqFj9oKEERu1NbKUxXxN",
+     
     },
 ];
 

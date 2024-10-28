@@ -39,6 +39,8 @@ function Pic() {
            icon= {<ArrowRight className="w-4 h-4 ml-1" />} 
            position='right' 
            title='Se Priser' 
+           otherClasses="transition duration-200 transform hover:scale-105 hover:bg-gradient-to-r hover:from-red-600 hover:to-red-900 hover:text-white"
+
            />
            </a>
         </div>
@@ -74,6 +76,8 @@ function Pic() {
            icon= {<ArrowRight className="w-4 h-4 ml-1" />} 
            position='right' 
            title='Boka' 
+          otherClasses="transition duration-200 transform hover:scale-105 hover:bg-gradient-to-r hover:from-red-600 hover:to-red-900 hover:text-white"
+
            />
            </a>
          

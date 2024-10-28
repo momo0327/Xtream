@@ -80,7 +80,9 @@ const Navbar = () => {
         <div className="hidden md:flex items-center">
           <Link
             href="/contact"
-            className="ml-4 px-4 py-2 text-white bg-gradient-to-r from-red-800 to-red-500 text-md rounded-md"
+            className="ml-4 px-4 py-2 text-white bg-gradient-to-r from-red-900 to-red-600 text-md rounded-md
+            hover:bg-gradient-to-r hover:from-red-950 hover:to-red-900 hover:text-white  "    
+            
           >
             Kontakta oss
           </Link>
@@ -112,7 +114,7 @@ const Navbar = () => {
             </div>
             <Link
               href="/contact"
-              className="bg-gradient-to-r from-red-800 to-red-500 text-white px-8 py-3 rounded-lg hover:bg-red-700"
+              className="bg-gradient-to-r  from-red-900 to-red-600 text-white px-8 py-3 rounded-lg hover:bg-gradient-to-r hover:from-red-950 hover:to-red-700 hover:text-white  "      
               onClick={toggleMenu}
             >
               Kontakta oss

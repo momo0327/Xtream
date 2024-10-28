@@ -42,7 +42,7 @@ function Hero() {
       <Link
         href="https://www.google.com/maps/search/?api=1&query=Xtream+E-sport+Arena+Spelhall+Göteborg,+Kyrkvägen+19,+433+33+Partille"
         target="_blank" // Opens in a new tab
-        className="flex items-center justify-center w-max rounded-full border-t border-foreground/30 bg-neutral-600/40 backdrop-blur-lg px-2 py-1 md:py-2 gap-2 md:gap-8 shadow-3xl shadow-background/40 cursor-pointer select-none"
+        className="flex items-center justify-center w-max rounded-full border-t border-foreground/30 bg-neutral-600/40 backdrop-blur-lg px-2 py-1 md:py-2 gap-2 md:gap-8 shadow-3xl shadow-background/40 cursor-pointer select-none "
       >
         <p className="text-foreground lg:text-md text-xs text-center md:text-base font-medium pl-4 pr-4 lg:pr-0 flex items-center justify-center ">
           {/* SVG Icon */}
@@ -55,7 +55,7 @@ function Hero() {
           Kyrktorget 19, Partille 
         </p>
 
-        <Button size="sm" className="rounded-full hidden lg:flex text-white bg-gradient-to-r from-red-800 to-red-500">
+        <Button size="sm" className="rounded-full hidden lg:flex text-white bg-gradient-to-r  from-red-800 to-red-500  hover:from-red-900 hover:to-red-700">
           Hitta hit
           <ArrowRight className="w-4 h-4 ml-1" />
         </Button>
@@ -99,20 +99,26 @@ function Hero() {
 
           {/* Subtext */}
           <p className="md:text-lg text-foreground/80 lg:mt-5 mt-3 text-sm lg:text-xl text-center lg:text-left lg:mb-1 mb-5">
-            Spela i timmar, 100+ olika roliga spel mätta dig själv <br /> med snacks och dryck från våran kiosk med bred sortiment  
-            
+          Spela i timmar, över 100+ roliga spel väntar! <br /> Njut av snacks och dryck från vår kiosk med brett sortiment            
           </p>
 
           {/* Action Button */}
           <div className="md:justify-start lg:text-left text-center">
-            <a href="#features">
-            <MagicButton
-              title='Utforska mer'
-              position='right'
-              icon={<FaLocationArrow />}
-            />
-            </a>
-          </div>
+  <a href="#features">
+    <MagicButton
+      title="Utforska mer"
+      position="right"
+      icon={<FaLocationArrow />}
+      otherClasses="transition duration-200 transform hover:scale-105 hover:bg-gradient-to-r hover:from-red-600 hover:to-red-900 hover:text-white
+                   text-xs sm:text-sm md:text-base lg:text-lg
+                   px-2 sm:px-3 md:px-4 py-1 sm:py-2 md:py-3
+                   min-w-[100px] whitespace-nowrap"
+    />
+  </a>
+</div>
+
+
+
         </div>
       </Container>
 

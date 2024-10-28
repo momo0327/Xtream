@@ -12,10 +12,10 @@ const Vid = () => {
   };
 
   return (
-    <div className="relative w-full h-screen">
+    <div className="relative w-full h-screen  ">
       {/* Full-screen Background Thumbnail with blur */}
       <div
-        className="absolute inset-0 w-full lg:h-[80%] h-[50%] bg-cover bg-center bg-black/50 flex flex-col items-center justify-center"
+        className="absolute inset-0 w-full lg:h-[80%] h-[50%] md:h-screen bg-cover bg-center bg-black/50 flex flex-col items-center justify-center"
         style={{ backgroundImage: `url('./assets/thumbnail2.jpg')` }} // Fullscreen blurred thumbnail
       >
         {/* Dark overlay for contrast */}
