@@ -27,7 +27,7 @@ function Pic() {
         {/* Text Content */}
         <div className="w-full md:w-1/2 max-w-lg space-y-4 text-left">
           {/* Title */}
-          <h1 className="lg:text-3xl text-xl font-bold">NATTGIB & DROP IN</h1>
+          <h1 className="lg:text-3xl text-xl font-bold">NATTGIBB & DROP IN</h1>
           {/* Text */}
           <p className="lg:text-xl font-normal text-sm text-gray-400">
           Drop-in varje dag, och nattgibben börjar på fredag och håller på till lördag. Nattgibben startar kl. 22:00 och slutar 06:00 – perfekt för nattugglor som älskar att spela!

@@ -93,8 +93,8 @@ function Hero() {
           {/* Main Headline with custom font */}
           <h1 className="text-transparent font-extrabold bg-clip-text bg-gradient-to-b from-white to-gray-400 leading-tight text-center lg:text-left lg:mt-8 lg:mb-5 mt-5 text-3xl lg:text-8xl" 
             style={{ fontFamily: 'ethocentric' }}> 
-            <span className="block">Göteborgs </span>
-            <span className="block">gaming arena</span>
+           
+            <span className="block">Gaming arena</span>
           </h1>
 
           {/* Subtext */}

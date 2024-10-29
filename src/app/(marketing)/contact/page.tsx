@@ -33,7 +33,7 @@ const ContactPage: React.FC = () => {
     setStatusMessage('');
 
     try {
-      const response = await fetch('https://formspree.io/f/meoqebzq', { // Replace with your Formspree form ID
+      const response = await fetch('https://formspree.io/f/xovqjokv', { // Replace with your Formspree form ID
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
