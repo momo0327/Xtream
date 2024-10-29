@@ -1,9 +1,58 @@
-'use client'
-import React from 'react';
+'use client';
+import React, { useState, ChangeEvent, FormEvent } from 'react';
 import { Phone, Mail, MapPin } from 'lucide-react'; // Import icons from lucide-react
 import { Container } from '@/components';
 
-const ContactPage = () => {
+// Define the shape of the form data
+interface FormData {
+  name: string;
+  email: string;
+  message: string;
+}
+
+const ContactPage: React.FC = () => {
+  const [formData, setFormData] = useState<FormData>({
+    name: '',
+    email: '',
+    message: '',
+  });
+  const [statusMessage, setStatusMessage] = useState<string>('');
+
+  // Handle input changes
+  const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
+  // Handle form submission
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setStatusMessage('');
+
+    try {
+      const response = await fetch('https://formspree.io/f/meoqebzq', { // Replace with your Formspree form ID
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setStatusMessage('Meddelandet skickades!');
+        setFormData({ name: '', email: '', message: '' }); // Clear the form
+      } else {
+        setStatusMessage('Fel: Meddelandet kunde inte skickas.');
+      }
+    } catch (error) {
+      console.error('Error submitting the form:', error);
+      setStatusMessage('Fel: Meddelandet kunde inte skickas.');
+    }
+  };
+
   return (
     <Container className="min-h-screen flex flex-col justify-center items-center px-4 md:px-20">
       {/* Kontakta Oss Heading with Ethnocentric font */}
@@ -17,10 +66,10 @@ const ContactPage = () => {
       </p>
 
       {/* Main Container: Flex on large screens, column on mobile */}
-      <div className="w-full flex flex-col-reverse lg:flex-row gap-10 items-center justify-center"> {/* Centering added here */}
+      <div className="w-full flex flex-col-reverse lg:flex-row gap-10 items-center justify-center">
         
         {/* Left Side: Contact Form */}
-        <form className="w-full lg:w-1/2 bg-black text-white p-8 rounded-lg shadow-lg space-y-6">
+        <form className="w-full lg:w-1/2 bg-black text-white p-8 rounded-lg shadow-lg space-y-6" onSubmit={handleSubmit}>
           <div>
             <label className="block text-gray-400 text-sm font-bold mb-2" htmlFor="name">
               Namn
@@ -28,8 +77,12 @@ const ContactPage = () => {
             <input
               type="text"
               id="name"
+              name="name" // Added name attribute
+              value={formData.name} // Controlled input
+              onChange={handleChange} // Controlled input
               className="w-full px-3 py-2 border border-gray-600 rounded-lg focus:outline-none focus:border-neutral-400 bg-black text-white placeholder-gray-400"
               placeholder="Ditt namn"
+              required // Added required validation
             />
           </div>
 
@@ -40,8 +93,12 @@ const ContactPage = () => {
             <input
               type="email"
               id="email"
+              name="email" // Added name attribute
+              value={formData.email} // Controlled input
+              onChange={handleChange} // Controlled input
               className="w-full px-3 py-2 border border-gray-600 rounded-lg focus:outline-none focus:border-neutral-400 bg-black text-white placeholder-gray-400"
               placeholder="Din e-postadress"
+              required // Added required validation
             />
           </div>
 
@@ -51,9 +108,13 @@ const ContactPage = () => {
             </label>
             <textarea
               id="message"
+              name="message" // Added name attribute
               rows={5}
+              value={formData.message} // Controlled input
+              onChange={handleChange} // Controlled input
               className="w-full px-3 py-2 border border-gray-600 rounded-lg focus:outline-none focus:border-neutral-400 bg-black text-white placeholder-gray-400"
               placeholder="Skriv ditt meddelande här"
+              required // Added required validation
             />
           </div>
 
@@ -63,10 +124,12 @@ const ContactPage = () => {
           >
             Skicka Meddelande
           </button>
+
+          {statusMessage && <p className="text-center text-white">{statusMessage}</p>} {/* Show status message */}
         </form>
 
         {/* Right Side: Contact Info */}
-        <div className="w-full lg:w-2/5 flex flex-col bg-neutral-800 p-8 rounded-lg shadow-lg space-y-4 items-start justify-center"> {/* Height reverted to original */}
+        <div className="w-full lg:w-2/5 flex flex-col bg-neutral-800 p-8 rounded-lg shadow-lg space-y-4 items-start justify-center">
           <h2 className="text-lg font-bold text-white mb-4">Kontaktinformation</h2>
           
           {/* Phone number section */}

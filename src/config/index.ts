@@ -6,7 +6,7 @@ export const SITE_CONFIG: Metadata = {
         default: "Xtream E-sport Arena - Bästa Spelupplevelsen",
         template: `%s | XtreamGaming`
     },
-    description: "Astra is an AI powered website builder that helps you create a website in minutes. No coding skills required. Get started for free!",
+    description: "Xtream eSport Arena är en toppmodern e-sportarena som erbjuder en unik spelupplevelse för både amatörer och proffs. Spela dina favoritspel med högsta kvalitet och utmana andra i en energifylld miljö. Besök oss idag!",
     icons: {
         icon: [
             {
@@ -16,8 +16,8 @@ export const SITE_CONFIG: Metadata = {
         ]
     },
     openGraph: {
-        title: "Astra - AI Powered Website Builder",
-        description: "Astra is an AI powered website builder that helps you create a website in minutes. No coding skills required. Get started for free!",
+        title: "Xtream E-sport Arena - Bästa Spelupplevelsen",
+        description:"Xtream eSport Arena är en toppmodern e-sportarena som erbjuder en unik spelupplevelse för både amatörer och proffs. Spela dina favoritspel med högsta kvalitet och utmana andra i en energifylld miljö. Besök oss idag!",
         images: [
             {
                 url: "/assets/logo.png",
@@ -27,8 +27,8 @@ export const SITE_CONFIG: Metadata = {
     twitter: {
         card: "summary_large_image",
         creator: "@shreyassihasane",
-        title: "Astra - AI Powered Website Builder",
-        description: "Astra is an AI powered website builder that helps you create a website in minutes. No coding skills required. Get started for free!",
+        title: "Xtream E-sport Arena - Bästa Spelupplevelsen",
+        description: "Xtream eSport Arena är en toppmodern e-sportarena som erbjuder en unik spelupplevelse för både amatörer och proffs. Spela dina favoritspel med högsta kvalitet och utmana andra i en energifylld miljö. Besök oss idag!",
         images: [
             {
                 url: "/assets/logo.png",

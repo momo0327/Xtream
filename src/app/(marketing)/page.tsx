@@ -19,6 +19,9 @@ import Features from "@/components/ui/Features";
 import Pricing from "@/components/ui/Pricing";
 import Pic from "@/components/ui/Pic";
 import Pic2 from "@/components/ui/pic2";
+import LampText from "@/components/ui/LampText";
+
+
 const HomePage = () => {
     const firstRow = reviews.slice(0, reviews.length / 2);
     const secondRow = reviews.slice(reviews.length / 2);
@@ -75,10 +78,13 @@ const HomePage = () => {
             <Vid/>
                 
 
-           
+            {/* Lamp */}
+        
+            <LampText/>
+         
+             
 
-            {/* newsletter */}
-                <Container>
+{/* <Container>
                     <LampContainer>
                         <div className="flex flex-col items-center justify-center relative w-full text-center">
                             <h2 className="text-4xl lg:text-4xl xl:text-6xl lg:!leading-snug font-semibold mt-8"
@@ -99,8 +105,10 @@ const HomePage = () => {
                         </div>
                     </LampContainer>
                     
-                </Container>
-                <style jsx>{`
+                </Container> */}
+           
+
+        <style jsx>{`
         @font-face {
           font-family: 'ethocentric';
           src: url('/assets/ethocentric.otf') format('opentype');  

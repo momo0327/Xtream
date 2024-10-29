@@ -12,7 +12,7 @@ const Vid = () => {
   };
 
   return (
-    <div className="relative w-full h-screen  ">
+    <div className="relative w-full h-screen">
       {/* Full-screen Background Thumbnail with blur */}
       <div
         className="absolute inset-0 w-full lg:h-[80%] h-[50%] md:h-screen bg-cover bg-center bg-black/50 flex flex-col items-center justify-center"
@@ -22,7 +22,7 @@ const Vid = () => {
         <div className="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
 
         {/* Title above the video player */}
-        <h1 className="text-white text-2xl lg:text-4xl sm:text-4xl font-bold z-20 mb-3"
+        <h1 className="text-white text-xl sm:text-2xl lg:text-4xl font-bold z-20 mb-3 text-center"
             style={{ fontFamily: 'ethocentric' }}
         >
           Kolla in videon
@@ -43,7 +43,14 @@ const Vid = () => {
             >
               {/* Play button centered on thumbnail */}
               <button className="text-white text-6xl bg-black/60 p-4 rounded-full">
-                ▶
+                <svg
+                  className="bg-black/80 p-4 rounded-full cursor-pointer"
+                  width="84" height="84" viewBox="0 0 64 64"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="32" cy="32" r="32" fill="black" fillOpacity="0.6" />
+                  <polygon points="26,20 46,32 26,44" fill="white" />
+                </svg>
               </button>
             </div>
           )}

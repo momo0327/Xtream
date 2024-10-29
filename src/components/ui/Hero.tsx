@@ -11,7 +11,7 @@ import { ChevronRight } from 'lucide-react';
 
 function Hero() {
   return (
-    <div className="relative w-screen h-[55vh] lg:h-screen md:h-[100vh]"> {/* Full height on desktop, reduced on mobile */}
+    <div id='#' className="relative w-screen h-[55vh] lg:h-screen md:h-[100vh]"> {/* Full height on desktop, reduced on mobile */}
       
       {/* Background Image */}
       <div className="absolute inset-0 -z-10 lg:w-full h-[90%] blur-sm w-100vw ">

@@ -8,7 +8,7 @@ export const perks = [
     {
         icon: FaGamepad,
         title: "Spela i timmar",
-        info: "Njut av ett stort urval av de senaste spelen och spela så länge du vill.",
+        info: "Njut av ett stort urval av de senaste spelen och spela i timmar!",
     },
     {
         icon: MdFastfood, // Updated snack icon
