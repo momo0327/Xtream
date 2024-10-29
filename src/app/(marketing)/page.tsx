@@ -79,9 +79,38 @@ const HomePage = () => {
                 
 
             {/* Lamp */}
+  <Container className="max-w-4xl mx-auto md:mt-24">
+    <LampContainer className="mb-8 lg:mb-12"> {/* Adds margin below lamp for spacing */}
+      <div className="flex flex-col items-center justify-center w-full text-center space-y-6 sm:space-y-8 lg:space-y-10">
         
-            <LampText/>
-         
+        {/* Heading */}
+        <h2
+          className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-semibold leading-tight"
+          style={{ fontFamily: 'ethocentric' }}
+        >
+          Besök oss <br /> idag
+        </h2>
+
+        {/* Description Paragraph */}
+        <p className="text-muted-foreground max-w-md mx-auto text-base sm:text-lg lg:text-xl px-4 sm:px-0">
+          Välkommen in för en upplevelse fylld av spel, spänning och gemenskap. Hos oss finns något för alla – vi ser fram emot ditt besök!
+        </p>
+
+        {/* Button */}
+        <Button variant="white" className="mt-4 sm:mt-6 px-6 py-3 text-sm sm:text-base lg:text-lg" asChild>
+          <Link href="https://www.google.com/maps/search/?api=1&query=Xtream+E-sport+Arena+Spelhall+Göteborg,+Kyrkvägen+19,+433+33+Partille"
+      target="_blank" // Opens in a new tab
+    >
+            Hitta hit
+            <ArrowRight className="w-4 h-4 ml-2" />
+          </Link>
+        </Button>
+      </div>
+    </LampContainer>
+  </Container>
+
+
+
              
 
 {/* <Container>

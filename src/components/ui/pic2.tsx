@@ -120,7 +120,7 @@ function Pic() {
             {/* Image with BorderBeam */}
             <BorderBeam className="absolute inset-0 z-10 rounded-sm" />
             <img
-              src="assets/arkad.HEIC" // Replace with your image URL
+              src="assets/arkad.jpg" // Replace with your image URL
               alt="New Experience Image"
               className="w-full h-auto rounded-lg shadow-lg relative z-0"
             />

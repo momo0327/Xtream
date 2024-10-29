@@ -38,7 +38,7 @@ function Pic() {
           <div className="relative z-0">
             <BorderBeam className="absolute inset-0 z-10 rounded-sm" />
             <img
-              src="assets/kiosk.HEIC" // Replace with your image URL
+              src="assets/kiosk.jpg" // Replace with your image URL
               alt="Placeholder Image"
               className="w-full h-auto rounded-lg shadow-lg relative z-0"
             />
